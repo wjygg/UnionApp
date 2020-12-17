@@ -44,8 +44,8 @@ class Api{
         if(resData!==null&&resData!==undefined){
             if(resData.code!=null){
                 response = new ApiResponse()
-                response.setResponse(resData.code,resData.data,resData.msg,resData);
-                if(response.code===200){
+                response.setResponse(resData.code,resData.result,resData.message,resData);
+                if(response.code==='00'){
                     response.setIsSuccess(true)
                 }else{
                     response.setIsSuccess(false)

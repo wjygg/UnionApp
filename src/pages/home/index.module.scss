@@ -1,13 +1,13 @@
 .home-page{
     display: flex;
     flex-direction: column;
-    background: white;
+    background: #f2f2f2;
     width: 100vw;
     height: 100vh;
     
     .search-view{
         width: auto;
-        height: 100px;
+        height: 55Px;
         display: flex;
         background: #fe733b;
         flex-direction: row;
@@ -33,15 +33,15 @@
             padding-left: 10px;
             margin-left: 20px;
             margin-right: 32px;
-            font-size: 32px;
+            font-size: 28px;
         }::placeholder{
             padding-left: 10px;
-            font-size: 32x;
+            font-size: 28x;
             font-family: PingFangSC, PingFangSC-Regular;
             font-weight: 400;
             text-align: left;
             color:#121212;
-            line-height: 32px;
+            line-height: 28px;
 
         }
 
@@ -54,8 +54,15 @@
 }
 
 .item{
+    width: auto;
+    height: 217px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background: white;
+
+    &-img{
+     width: 217px;
+     height: 217px;  
+    }
 }
 

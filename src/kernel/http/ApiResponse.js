@@ -10,7 +10,7 @@ export default class ApiResponse {
 
     setResponse(code, data, errorMsg,res){
         this.code = code;
-        this.data = data;
+        this.result = data;
         this.errorMsg = errorMsg;
         this.res = res;
     }
@@ -23,12 +23,12 @@ export default class ApiResponse {
         return this.code;
     }
 
-    setData(_data){
-        this.data = _data
+    setResult(_data){
+        this.result = _data
     }
 
-    getData() {
-        return this.data;
+    getResult() {
+        return this.result;
     }
 
     
