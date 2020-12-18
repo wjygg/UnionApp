@@ -19,16 +19,9 @@ const requestWithHook = (method, api, data, header,responseHook) => {
                 }else{
                     reject(response)
                 }
-            }).catch(res => {
-                res.json().then(r=>{
-                    console.log(r)
-                    let response = responseHook(r);
-                    reject(response)
-                }).catch(err=>{
-                    console.log(err)
-                    let response = responseHook(err);
-                    reject(response)
-                })
+            }).catch(err => {
+                let response = responseHook(err);
+                reject(response)
             })
         };
         //出现异常后2s后重试，共重试2次
